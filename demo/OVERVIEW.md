@@ -27,7 +27,6 @@ We wanted to create a tool that makes mental health support feel less isolating 
 
 ## 📌 Future Improvements
 ``` c
- 
  Group challenges to strengthen community engagement.  
- Advanced personalization of avatars and rewards.
+ Advanced personalization of avatars  based on a coin based system with rewards.
 ```
