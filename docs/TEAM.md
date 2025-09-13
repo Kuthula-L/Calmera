@@ -23,5 +23,5 @@ University of the Western Cape
 ```
 
 ## 📧 Other Contact Info
-- GitHub Repo: <https://github.com/user-name/repo-name>
+- GitHub Repo: https://github.com/Kuthula-L/Calmera
 - Other Info (if available): LinkedIn, Website, etc.
