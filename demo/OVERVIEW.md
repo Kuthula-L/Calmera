@@ -4,27 +4,30 @@
 
 ## 🎯 Project Name
 ``` c
-// TODO: Enter your project name here
-calmera
+Calmera
 ```
 
 ## 🚀 Summary
-``` c
-// TODO: Write a short, high-level description of your
-// project (2–3 sentences).
+```
+Calmera is a mental well-being and community support app designed to help people stay mindful, connected, and motivated. It provides tools for tracking emotional health, fostering peer-to-peer connections, and creating a safe environment for open conversations.
 ```
 
 ## ✨ Key Features
 ``` c
-// TODO: List key features.
-```
+Community Connections – Connect with peers in your community and build meaningful relationships.  
+Mental Health Tracking – Track your emotional well-being with a streak-based system and receive personalized progress feedback. 
+Safe Space Chat – Engage in anonymous conversations with people who may relate to your experiences in a supportive environment.  
+Growth Avatar System – Complete daily tasks and watch your in-app “heart” avatar grow as a visual reflection of your self-care journey.  
+``` 
 
 ## 💡 Inspiration
 ``` c
-// TODO: Briefly explain the motivation behind your project.
+We wanted to create a tool that makes mental health support feel less isolating and more rewarding. By combining community, tracking, and gamification, Calmera encourages users to take small but consistent steps toward better well-being.
 ```
 
 ## 📌 Future Improvements
 ``` c
-// TODO: Mention ideas or features you’d add if given more time.
+ 
+ Group challenges to strengthen community engagement.  
+ Advanced personalization of avatars and rewards.
 ```
