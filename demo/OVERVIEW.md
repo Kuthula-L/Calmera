@@ -9,7 +9,7 @@ Calmera
 
 ## 🚀 Summary
 ```
-Calmera is a mental well-being and community support app designed to help people stay mindful, connected, and motivated. It provides tools for tracking emotional health, fostering peer-to-peer connections, and creating a safe environment for open conversations.
+Calmera is a mental well-being and anonymous community support app designed to help people stay mindful, connected, and motivated. It provides tools for tracking emotional health, fostering peer-to-peer connections, and creating a safe environment for open conversations.
 ```
 
 ## ✨ Key Features
