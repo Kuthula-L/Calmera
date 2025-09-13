@@ -12,10 +12,10 @@ bug busters
 ## 👥 Members
 | Name           | Role                | Institution                              | Discord Handle | Email                     |
 |----------------|---------------------|------------------------------------------| ---------------|---------------------------|
-| **Noloyiso**   | Backend Developer   | University of the Western Cape           | noloyiso_24159 | <noloyisozangwa@gmail.com>|
-| **Gomolemo**   | Frontend Developer  | University of the Western Cape           | gomo07551_13442| <4407524@myuwc.ac.za>     |
-| **Kuthula**    | Designer            | University of the Western Cape           | zombie027638   | <kuthula6336@gmail.com>   |
-| **Bulumko**    | Q.A Tester          | University of the Western Cape           | thamitn        | <bulumkotshoni@gmail.com> |
+| **Noloyiso**   | Frontend Developer  | University of the Western Cape           | noloyiso_24159|<noloyisozangwa@gmail.com>|
+| **Gomolemo**   | Database designer   | University of the Western Cape           | gomo07551_13442| <4407524@myuwc.ac.za>   |
+| **Kuthula**    | Backend Developer   | University of the Western Cape           | zombie027638   |<kuthula6336@gmail.com> |
+| **Bulumko**    | Q.A Tester          | University of the Western Cape           | thamitn        |<bulumkotshoni@gmail.com> |
 
 ## 🏫 Institution
 ``` c
