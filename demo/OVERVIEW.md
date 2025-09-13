@@ -28,5 +28,5 @@ We wanted to create a tool that makes mental health support feel less isolating 
 ## 📌 Future Improvements
 ``` c
  Group challenges to strengthen community engagement.  
- Advanced personalization of avatars  based on a coin based system with rewards.
+ Advanced Avatar Personalization – Earn coins by completing tasks and use them to customize your avatar with new styles and rewards.
 ```
