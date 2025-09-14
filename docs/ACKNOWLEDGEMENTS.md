@@ -15,18 +15,11 @@ This document lists all **third-party repositories, modules, libraries, framewor
 |----------------------|-------------------------------------------------------|-----------------|------------------------|
 | IntricatePointers    | https://github.com/DnA-IntRicate/IntricatePointers    | Adam Foflonker  | Memory management      |
 | fast_obj             | https://github.com/thisistherk/fast_obj               | Richard Knight  | Parsing OBJ files      |
+##design tool
+| Tool                               | Usage                                                            |
+| ----------------------------------- | ---------------------------------------------------------------- |
+| Figma                               | Software used to create or design assets, mockups, or prototypes |
+|Figma make                           | used specifically to show how ai would block harmful messages    | 
 
----
 
-## 🌐 APIs & Services
-| Name          | Link / Docs                        | Author(s)      | Usage                             |
-|---------------|------------------------------------|----------------|-----------------------------------|
-| OpenWeather   | https://openweathermap.org/api     | Open Weather   | Fetching weather data             |
-| Stripe        | https://stripe.com/docs/api        | Stripe         | Payment handling                  |
 
----
-
-## 📊 Datasets
-| Name          | Source                              | Usage                             |
-|---------------|-------------------------------------|-----------------------------------|
-| MNIST         | http://yann.lecun.com/exdb/mnist/   | Training/testing machine learning |
