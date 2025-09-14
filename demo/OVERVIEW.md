@@ -9,25 +9,26 @@ Calmera
 
 ## 🚀 Summary
 ```
-Calmera is a mental well-being and anonymous community support app designed to help people stay mindful, connected, and motivated. It provides tools for tracking emotional health, fostering peer-to-peer connections, and creating a safe environment for open conversations.
+The app provides a safe, anonymous space for people to connect, chat, and track their mental health. It includes an AI chatbot for instant support and integrates trusted South African helplines for professional help when needed. This combination makes mental health care more accessible, private, and supportive.
 ```
 
 ## ✨ Key Features
 ``` c
-Community Connections – Connect with peers in your community and build meaningful relationships.  
+ 
 Mental Health Tracking – Track your emotional well-being with a streak-based system and receive personalized progress feedback. 
-Safe Space Chat – Engage in anonymous conversations with people who may relate to your experiences in a supportive environment.  
-Growth Avatar System – Complete daily tasks and watch your in-app “heart” avatar grow as a visual reflection of your self-care journey.  
+Safe Space Chat – Engage in anonymous conversations with people who may relate to your experiences in a supportive environment with an ai chat moderator to prevent harmful messages from being sent.
+
 ``` 
 
 ## 💡 Inspiration
 ``` c
-We wanted to create a tool that makes mental health support feel less isolating and more rewarding. By combining community, tracking, and gamification, Calmera encourages users to take small but consistent steps toward better well-being.
+A strong inspiration behind this idea is the growing need for accessible, stigma-free mental health support. Many people hesitate to seek help openly because of judgment, cost, or not knowing where to start. By combining anonymity, AI, and helpline access, the app is inspired by the vision of giving everyone a safe first step toward care — anytime, anywhere.
 ```
 
 ## 📌 Future Improvements
 ``` c
- Group challenges to strengthen community engagement.  
- Advanced Avatar Personalization – Earn coins by completing tasks and use them to customize your avatar with new styles and rewards.
+Adding a communities section where people who struggle with the same issue can be paired using AI then grouped into a community. In the community they can chat anonymously with group challenges to strengthen community engagement.
+Add a "things you can do around you" page where people can see events around happening around them to encourage social engagement.
+Advanced Avatar Personalization – Earn coins by completing tasks and use them to customize your avatar with new styles and rewards.
  
 ```
