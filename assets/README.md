@@ -12,6 +12,12 @@ The images were taken from storyset by freepik on the Figma website
 <img width="68" height="52" alt="image" src="https://github.com/user-attachments/assets/58fb4469-d9dc-49fc-a1d2-73fbed25718d" />
 <img width="68" height="52" alt="image" src="https://github.com/user-attachments/assets/723db23f-e160-4cc4-94d2-417918335c9d" />
 <img width="62" height="62" alt="image" src="https://github.com/user-attachments/assets/dfa004e7-d308-4844-88b3-cec7e8a63c39" />
+<img width="346" height="367" alt="image" src="https://github.com/user-attachments/assets/6c17e3fb-152a-442a-a25c-74e0ce356c2d" />
+<img width="346" height="367" alt="image" src="https://github.com/user-attachments/assets/65d7549f-d362-4427-b219-b8510e10ca4c" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/583906af-ff38-4ddb-a7b2-c46b2ad3256c" />
+
+
+
 
 
 
