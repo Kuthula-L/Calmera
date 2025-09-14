@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Wellness Challenges</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      background: linear-gradient(to right, #7e22ce, #2563eb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 20px 0;
+    }
+    .stat {
+      text-align: center;
+    }
+    .progress {
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(to right, #7e22ce, #2563eb);
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      position: relative;
+    }
+    .icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      border-radius: 12px;
+    }
+    .title {
+      flex: 1;
+      font-weight: 600;
+    }
+    .title.completed {
+      text-decoration: line-through;
+      color: #6b7280;
+    }
+    .points {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    button {
+      border: none;
+      border-radius: 8px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    button:disabled {
+      background: #10b981;
+      color: #fff;
+      cursor: default;
+    }
+    .celebration {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(to right, #f0fdf4, #ecfdf5);
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Daily Wellness Challenges</h2>
+    
+    <div class="stats">
+      <div class="stat">
+        <div><span id="completed">0</span>/<span id="total">0</span></div>
+        <p>Completed</p>
+      </div>
+      <div class="stat">
+        <div><span id="points">0</span></div>
+        <p>Points</p>
+      </div>
+    </div>
+
+    <div class="progress"><div id="progress-bar" class="progress-bar"></div></div>
+
+    <div id="challenges"></div>
+    <div id="celebration" class="celebration" style="display:none;">
+      🎉 Fantastic! All challenges completed! <br />
+      You’ve earned <span id="final-points"></span> points today. Keep it up!
+    </div>
+  </div>
+
+  <script>
+    const challenges = [
+      { id: '1', title: 'Take a 10-minute walk outside', points: 20, completed: false, icon: '🚶‍♀️', color: '#10b981', bgColor: '#d1fae5' },
+      { id: '2', title: 'Practice gratitude - list 3 things', points: 15, completed: false, icon: '🙏', color: '#f59e0b', bgColor: '#fef3c7' },
+      { id: '3', title: 'Drink 8 glasses of water', points: 10, completed: false, icon: '💧', color: '#3b82f6', bgColor: '#dbeafe' },
+      { id: '4', title: 'Complete a breathing exercise', points: 25, completed: false, icon: '🫁', color: '#8b5cf6', bgColor: '#e9d5ff' },
+      { id: '5', title: 'Call a friend or family member', points: 30, completed: false, icon: '📞', color: '#ef4444', bgColor: '#fecaca' },
+      { id: '6', title: 'Write in a journal for 5 minutes', points: 20, completed: false, icon: '📝', color: '#6366f1', bgColor: '#e0e7ff' },
+    ];
+
+    const challengesDiv = document.getElementById("challenges");
+    const completedSpan = document.getElementById("completed");
+    const totalSpan = document.getElementById("total");
+    const pointsSpan = document.getElementById("points");
+    const progressBar = document.getElementById("progress-bar");
+    const celebration = document.getElementById("celebration");
+    const finalPoints = document.getElementById("final-points");
+
+    let totalPoints = 0;
+    totalSpan.textContent = challenges.length;
+
+    function renderChallenges() {
+      challengesDiv.innerHTML = "";
+      challenges.forEach(c => {
+        const card = document.createElement("div");
+        card.className = "card";
+        
+        const icon = document.createElement("div");
+        icon.className = "icon";
+        icon.style.backgroundColor = c.bgColor;
+        icon.textContent = c.icon;
+
+        const title = document.createElement("div");
+        title.className = "title" + (c.completed ? " completed" : "");
+        title.textContent = c.title;
+
+        const points = document.createElement("div");
+        points.className = "points";
+        points.style.color = c.color;
+        points.textContent = `+${c.points} pts`;
+
+        const btn = document.createElement("button");
+        btn.textContent = c.completed ? "✔ Done" : "Complete";
+        btn.style.backgroundColor = c.completed ? "#10b981" : c.color;
+        btn.style.color = c.completed ? "#fff" : "#000";
+        btn.disabled = c.completed;
+        btn.onclick = () => completeChallenge(c.id);
+
+        card.appendChild(icon);
+        card.appendChild(title);
+        card.appendChild(points);
+        card.appendChild(btn);
+        challengesDiv.appendChild(card);
+      });
+
+      const completedCount = challenges.filter(c => c.completed).length;
+      completedSpan.textContent = completedCount;
+      pointsSpan.textContent = totalPoints;
+      progressBar.style.width = `${(completedCount / challenges.length) * 100}%`;
+
+      if (completedCount === challenges.length) {
+        finalPoints.textContent = totalPoints;
+        celebration.style.display = "block";
+      }
+    }
+
+    function completeChallenge(id) {
+      const challenge = challenges.find(c => c.id === id);
+      if (challenge && !challenge.completed) {
+        challenge.completed = true;
+        totalPoints += challenge.points;
+        renderChallenges();
+      }
+    }
+
+    renderChallenges();
+  </script>
+</body>
+</html>
