@@ -27,8 +27,8 @@ A strong inspiration behind this idea is the growing need for accessible, stigma
 
 ## 📌 Future Improvements
 ``` c
-Adding a communities section where people who struggle with the same issue can be paired using AI then grouped into a community. In the community they can chat anonymously with group challenges to strengthen community engagement.
+Adding community group challenges to strengthen community engagement.
 Add a "things you can do around you" page where people can see events around happening around them to encourage social engagement.
-Advanced Avatar Personalization – Earn coins by completing tasks and use them to customize your avatar with new styles and rewards.
+Advanced Avatar Personalization – use coins/points to customize avatar with new styles(e.g clothes, hair) and rewards.
  
 ```
